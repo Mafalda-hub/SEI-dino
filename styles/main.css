@@ -1,4 +1,67 @@
-* {
+.dino {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  bottom: 0px;
+}
+
+.obstacle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: green;
+  bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
   padding: 0;
   margin: 0;
 }
@@ -13,8 +76,19 @@
   width: 20px;
   height: 50px;
   background-color: red;
-  position: relative; /* allows us to move it */
+  position: relative; /* allows us to move it 
   top: 150px;
+}
+
+.animate {
+  animation: jump 500ms;
+}
+
+@keyframes jump {
+  0%{top: 150px;}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: 150px;}
 }
 
 #block {
@@ -24,4 +98,11 @@
   position: relative;
   top: 130px;
   left: 480px;
+  animation: block 1s infinite linear; /* this makes the block move infinitely 
 }
+
+/* Create an animation so it will allow the block to slide towards the character 
+@keyframes block {
+  0%{left:480px}
+  100%{left: -40px;}
+} */
